@@ -1,7 +1,10 @@
 
 const toggleButton = () => {
   return (
-    <div>toggleButton</div>
+    <button onClick={()=>setOpen(prev=>!prev)}>
+
+    </button>
+  
   )
 }
 

@@ -7,20 +7,23 @@
         align-items: center;
         justify-content: space-between;
 
-    }
-    .span{
-        font-weight: bold;
-    }
 
-    .social{
-        display: flex;
-        gap: 20px;
+        .span{
+            font-weight: bold;
+        }
     
+        .social{
+            display: flex;
+            gap: 20px;
+        
+        
+            img{
+                width: 18px;
+                height: 18px;
+            }
     
-        img{
-            width: 18px;
-            height: 18px;
         }
 
     }
+    
 }

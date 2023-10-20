@@ -84,7 +84,7 @@ const Hero = () => {
         OPEN SOURCE MERN STACK
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero1.png" alt="" />
+        <img src="dist/hero1.png" alt="" />
       </div>
     </div>
   );

@@ -28,11 +28,11 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-520%",
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
-      duration: 20,
+      duration: 30,
     },
   },
 };
@@ -53,14 +53,20 @@ const Hero = () => {
           Full Stack Developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-         
+            <motion.a variants={textVariants} href="#Latest Work">
+                <button>
+                  See the Latest Works
+                </button>
+              </motion.a>
 
-            <motion.button  variants={textVariants}> 
-              See the Latest Works
-            </motion.button>
+              <motion.a variants={textVariants} href="#Contact">
+                <button>
+                  Contact Me
+                </button>
+              </motion.a>
 
-            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
+
           <motion.img
             variants={textVariants}
             animate="scrollButton"

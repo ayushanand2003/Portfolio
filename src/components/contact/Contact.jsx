@@ -39,6 +39,7 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true)
+          formRef.current.reset();
         },
         (error) => {
           setError(true);
@@ -74,7 +75,7 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 1.4, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -104,14 +105,14 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 2, duration: 2 }}
         >
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
-          {success && "Success"}
+          {success && "Your Message has been Delivered Successfully"}
         </motion.form>
       </div>
     </motion.div>

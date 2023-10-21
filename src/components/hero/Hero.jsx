@@ -28,7 +28,7 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-520%",
+    x: "-150%",
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
@@ -84,7 +84,7 @@ const Hero = () => {
         OPEN SOURCE MERN STACK
       </motion.div>
       <div className="imageContainer">
-        <img src="https://github.com/ayushanand2003/Portfolio/blob/main/public/hero1.png?raw=true" alt="" />
+        <img src="https://raw.githubusercontent.com/ayushanand2003/Portfolio/main/public/hero1.png" alt="hero img" />
       </div>
     </div>
   );

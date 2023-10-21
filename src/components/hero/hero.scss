@@ -28,9 +28,16 @@
       }
 
       h2 {
+        padding-top: 35%;
         font-size: 30px;
         color: rgb(169, 162, 169);
         letter-spacing: 10px;
+
+        @include mobile{
+          font-size: 30px;
+          color: rgb(169, 162, 169);
+          letter-spacing: 10px;
+        }
       }
 
       h1 {
@@ -83,12 +90,22 @@
 
   .slidingTextContainer {
     position: absolute;
-    // object-fit: cover;
-    font-size: 50vh;
-    bottom: -120px;
+    font-size: 40vh;
+    bottom: 370px;  //changed to 250(above) from -120(bottom)
     white-space: nowrap;
     color: #dcdcdc1e;
     width: 50%;
     font-weight: bold;
+
+    @include mobile{
+      position: absolute;
+      font-size: 40vh;
+      bottom: -20px;  //changed to 250(above) from -120(bottom)
+      white-space: nowrap;
+      color: #dcdcdc1e;
+      width: 50%;
+      font-weight: bold;
+
+    }
   }
 }

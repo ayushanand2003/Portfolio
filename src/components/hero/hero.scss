@@ -67,9 +67,9 @@
     right: 0;
 
     @include mobile {
-      height: 70%;
+      height: 55%;
       width: 100%;
-      top: 45%;
+      top: unset;
       bottom: 0;
       
     }

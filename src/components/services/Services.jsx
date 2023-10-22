@@ -55,36 +55,29 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Project 1</h2>
+          <h2>Resume Builder</h2>
           <p>
-                A brief description of Project 1 goes here. 
-                Highlight the key features and technologies used.
+          Engineered with React, HTML, CSS, and JavaScript, this Resume Builder offers a dynamic platform to craft and customize professional resumes. Utilizing cutting-edge web technologies, it enables seamless personalization for a tailored representation of skills and experience. Explore a robust toolset designed to enhance your professional profile.
 
           </p>
-          <button>Go</button>
+      
+          <button onClick={() => window.location.href="#project-1"}>Go to Resume Builder</button>
+
+
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Project 2</h2>
+          <h2>React Portfolio</h2>
           <p>
-          A brief description of Project 2 goes here. 
-                Highlight the key features and technologies used.
+          Constructed with a robust tech stack including HTML, SCSS (SASS), React, Vite, and Framer Motion, this portfolio website harmonizes creativity with technology. Vite ensures rapid performance, while React provides dynamic interactivity. The utilization of SCSS (SASS) facilitates structured and reusable styling. Framer Motion enriches the user experience with seamless animations. Dive into a curated collection of projects, skills, and experiences presented in an intuitive and visually captivating manner.
           </p>
-          <button>Go</button>
+          <button onClick={() => window.location.href="#project-2"}>Go to React Portfolio</button>
+
+
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Project 3</h2>
-          <p>
-          A brief description of Project 3 goes here. 
-                Highlight the key features and technologies used.
-          </p>
-          <button>Go</button>
-        </motion.div>
+      
       
       </motion.div>
     </motion.div>

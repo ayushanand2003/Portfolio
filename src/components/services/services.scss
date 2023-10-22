@@ -109,6 +109,8 @@
     }
 
     .box {
+      height: 40vh;
+      width: 70vw;
       padding: 50px;
       border: 0.5px solid gray;
       display: flex;
@@ -116,15 +118,18 @@
       justify-content: space-between;
 
       @include mobile {
-        border: none;
+
+        height: 20vh;
+        width: 100vw;
         align-items: center;
-        gap: 20px;
-        padding: 10px;
+        gap: 0px;
+        padding: 5px;
       }
 
       p {
         @include mobile {
-          display: none;
+          // display: none;
+          font-size: 8px;
         }
       }
 
@@ -144,5 +149,9 @@
         }
       }
     }
+    
   }
 }
+
+
+

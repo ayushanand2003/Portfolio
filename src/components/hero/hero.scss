@@ -63,6 +63,14 @@
 
       img {
         width: 50px;
+
+        @include mobile{
+
+          display: flex;
+          align-items: center;
+          margin-left: -80%;
+        }
+
       }
     }
   }
@@ -74,8 +82,8 @@
     right: 0;
 
     @include mobile {
-      height: 50vh;
-      width: 100%;
+      height: 50%;
+      width: 90%;
       top: unset;
       bottom: 0;
       

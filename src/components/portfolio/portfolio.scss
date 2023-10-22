@@ -101,13 +101,14 @@
           padding: 10px;
           width: 200px;
           cursor: pointer;
+
           @include mobile {
 
               
               position: relative;
-              bottom: 20vh;
-              left: 30vw;
-              width: 50%; /* Adjust width for mobile if needed */
+              bottom: 0vh;
+              left: 0vw;
+              width: 100%; /* Adjust width for mobile if needed */
         
           }
           

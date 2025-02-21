@@ -7,14 +7,14 @@ const items = [
   {
     id: 1,
     title: "Panoray Ventures",
-    img: "/panoray.png",
+    img: "https://raw.githubusercontent.com/ayushanand2003/Portfolio/refs/heads/main/public/panoray.png",
     desc: "Website for a VC/WEB3 firm. Panoray offers a comprehensive platform for managing and optimizing venture capital investments and web3 projects.",
     demoLink: "https://www.panoray.com/",
   },
   {
     id: 2,
     title: "Newrro Website",
-    img: "/newrro.png",
+    img: "https://raw.githubusercontent.com/ayushanand2003/Portfolio/refs/heads/main/public/newrro.png",
     desc: "Website for a Startup company. Newrro provides innovative solutions and services tailored to meet the needs of modern businesses.",
     demoLink: "https://www.newrro.in/",
   },

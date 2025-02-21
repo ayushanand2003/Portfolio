@@ -60,14 +60,7 @@ const Services = () => {
           Engineered with React, HTML, CSS, and JavaScript, this Resume Builder offers a dynamic platform to craft and customize professional resumes. Utilizing cutting-edge web technologies, it enables seamless personalization for a tailored representation of skills and experience. Explore a robust toolset designed to enhance your professional profile.
 
           </p>
-<<<<<<< HEAD
-      
-          <button onClick={() => window.location.href="#project-1"}>Go to Resume Builder</button>
-
-
-=======
           <button onClick={() => window.location.href="#project-1"}>Go to Panoray Ventures</button>
->>>>>>> 19d0c01 (Updated Website)
         </motion.div>
         <motion.div
           className="box"
@@ -77,13 +70,7 @@ const Services = () => {
           <p>
           Constructed with a robust tech stack including HTML, SCSS (SASS), React, Vite, and Framer Motion, this portfolio website harmonizes creativity with technology. Vite ensures rapid performance, while React provides dynamic interactivity. The utilization of SCSS (SASS) facilitates structured and reusable styling. Framer Motion enriches the user experience with seamless animations. Dive into a curated collection of projects, skills, and experiences presented in an intuitive and visually captivating manner.
           </p>
-<<<<<<< HEAD
-          <button onClick={() => window.location.href="#project-2"}>Go to React Portfolio</button>
-
-
-=======
           <button onClick={() => window.location.href="#project-2"}>Go to Newrro </button>
->>>>>>> 19d0c01 (Updated Website)
         </motion.div>
       
       

@@ -3,35 +3,37 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
+   
   {
     id: 1,
+    title: "Panoray Ventures",
+    img: "/panoray.png",
+    desc: "Website for a VC/WEB3 firm. Panoray offers a comprehensive platform for managing and optimizing venture capital investments and web3 projects.",
+    demoLink: "https://www.panoray.com/",
+  },
+  {
+    id: 2,
+    title: "Newrro Website",
+    img: "/newrro.png",
+    desc: "Website for a Startup company. Newrro provides innovative solutions and services tailored to meet the needs of modern businesses.",
+    demoLink: "https://www.newrro.in/",
+  },
+  
+  {
+    id: 3,
     title: "Resume Builder",
     img: "https://raw.githubusercontent.com/ayushanand2003/Portfolio/main/public/Resume%20Builder.png",
     desc: "Engineered with React, HTML, CSS, and JavaScript, this Resume Builder offers a dynamic platform to craft and customize professional resumes. Utilizing cutting-edge web technologies, it enables seamless personalization for a tailored representation of skills and experience. Explore a robust toolset designed to enhance your professional profile.",
     demoLink: "https://ayushanand2003.github.io/react_resume-builder/",
-   
   },
   {
-    id: 2,
+    id: 4,
     title: "React Portfolio",
     img: "https://raw.githubusercontent.com/ayushanand2003/Portfolio/main/public/React%20Portfolio.png",
     desc: "Constructed with a robust tech stack including HTML, SCSS (SASS), React, Vite, and Framer Motion, this portfolio website harmonizes creativity with technology. Vite ensures rapid performance, while React provides dynamic interactivity. The utilization of SCSS (SASS) facilitates structured and reusable styling. Framer Motion enriches the user experience with seamless animations. Dive into a curated collection of projects, skills, and experiences presented in an intuitive and visually captivating manner.",
     demoLink: "https://ayushanand2003.github.io/Portfolio/",
   },
-  {
-    id: 3,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    demoLink: "https://www.example.com/demo",
-  },
-  {
-    id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    demoLink: "https://www.example.com/demo",
-  },
+ 
 ];
 
 const Single = ({ item }) => {

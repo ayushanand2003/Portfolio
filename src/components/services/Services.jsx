@@ -19,9 +19,15 @@ const variants = {
   },
 };
 
+const hoverEffect = {
+  scale: 1.05,
+  transition: {
+    duration: 0.3,
+  },
+};
+
 const Services = () => {
   const ref = useRef();
-
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
@@ -29,51 +35,45 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-      <p>
-        Take a glimpse into my recent Projects 
-        <br />
-      </p>
+        <p>
+          Take a glimpse into my recent Projects 
+          <br />
+        </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="https://raw.githubusercontent.com/ayushanand2003/Portfolio/main/public/web.png" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>LATEST</motion.b> WORK
+            <motion.b whileHover={{ color: "orange", scale: 1.2 }}>LATEST</motion.b> WORK
           </h1>
         </div>
-       
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "lightgray", color: "black", ...hoverEffect }}
         >
-          <h2>Resume Builder</h2>
+          <h2>Panoray Ventures Website</h2>
           <p>
-          Engineered with React, HTML, CSS, and JavaScript, this Resume Builder offers a dynamic platform to craft and customize professional resumes. Utilizing cutting-edge web technologies, it enables seamless personalization for a tailored representation of skills and experience. Explore a robust toolset designed to enhance your professional profile.
-
+          Website for a VC/WEB3 firm. The website is built using React, Next.js, and Tailwind CSS. The website is fully responsive and has a clean and modern design. The website is also integrated with CMS for easy content management.
           </p>
           <button onClick={() => window.location.href="#project-1"}>Go to Panoray Ventures</button>
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "lightgray", color: "black", ...hoverEffect }}
         >
-          <h2>React Portfolio</h2>
+          <h2>Newrro Website</h2>
           <p>
-          Constructed with a robust tech stack including HTML, SCSS (SASS), React, Vite, and Framer Motion, this portfolio website harmonizes creativity with technology. Vite ensures rapid performance, while React provides dynamic interactivity. The utilization of SCSS (SASS) facilitates structured and reusable styling. Framer Motion enriches the user experience with seamless animations. Dive into a curated collection of projects, skills, and experiences presented in an intuitive and visually captivating manner.
+          Website for a Startup company. The website is built using React, Next.js, and Tailwind CSS. The website is fully responsive and has a clean and modern design. The website is also integrated with CMS for easy content management.
           </p>
           <button onClick={() => window.location.href="#project-2"}>Go to Newrro </button>
         </motion.div>
-      
-      
       </motion.div>
     </motion.div>
   );
